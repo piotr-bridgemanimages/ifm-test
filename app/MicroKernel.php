@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * MicroKernel
+ **/
+class MicroKernel
+{
+
+}

@@ -1,0 +1,14 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: orm.yml }
+
+parameters:
+    locale: en
+
+framework:
+    secret:          "%secret%"
+    default_locale:  "%locale%"
+    trusted_hosts:   ~
+    trusted_proxies: ~
+    http_method_override: true
+

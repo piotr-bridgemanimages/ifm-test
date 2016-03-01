@@ -1,0 +1,29 @@
+# This file is a "template" of what your parameters.yml file should look like
+# Set parameters here that may be different on each deployment target of the app, e.g. development, staging, production.
+# http://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
+parameters:
+    database_master_host:     127.0.0.1
+    database_master_port:     ~
+    database_master_name:     gkm
+    database_master_user:     dbuser
+    database_master_password: dbuser
+
+    database_slave1_host:     127.0.0.1
+    database_slave1_port:     ~
+    database_slave1_name:     gkm
+    database_slave1_user:     dbuser
+    database_slave1_password: dbuser
+
+    database_fixtures_host:     127.0.0.1
+    database_fixtures_port:     ~
+    database_fixtures_name:     gkm_fixtures
+    database_fixtures_user:     dbuser
+    database_fixtures_password: dbuser
+
+    mailer_transport:  smtp
+    mailer_host:       127.0.0.1
+    mailer_user:       ~
+    mailer_password:   ~
+
+    # A secret key that's used to generate certain security-related tokens
+    secret:            ThisTokenIsNotSoSecretChangeIt

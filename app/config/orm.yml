@@ -1,0 +1,25 @@
+
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        driver:   pdo_mysql
+        host:     "%database_master_host%"
+        port:     "%database_master_port%"
+        dbname:   "%database_master_name%"
+        user:     "%database_master_user%"
+        password: "%database_master_password%"
+        charset:  UTF8
+        slaves:
+            slave1:
+                host:     %database_slave1_host%
+                port:     %database_slave1_port%
+                dbname:   %database_slave1_name%
+                user:     %database_slave1_user%
+                password: %database_slave1_password%
+
+    orm:
+        auto_generate_proxy_classes: "%kernel.debug%"
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        mappings:
+            AppBundle:  ~
